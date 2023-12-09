@@ -65,4 +65,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit new version
-        run: git add . && git commit -m "Release ${{ steps.package-version.outputs.current-version }}" && git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Release ${{ steps.package-version.outputs.current-version }}"
