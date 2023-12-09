@@ -1,5 +1,5 @@
 {
-  "version": "1.3.127",
+  "version": "0.0.0",
   "license": "MIT",
   "bin": {
     "orchard": "./dist/esm/index.js"
@@ -23,9 +23,7 @@
     "prepare": "bun run build",
     "size": "size-limit",
     "generate": "bun --bun ./dist/esm/index.js generate",
-    "lerna:changed": "lerna changed",
-    "lerna:version": "lerna version --conventional-commits --exact --yes",
-    "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-package --no-verify-access --yes --create-release github"
+    "publish": "yarn version --patch --no-git-tag-version && npm publish --access public"
   },
   "name": "@bunstack/theme",
   "description": "A practical theme generator built from the ground up",
