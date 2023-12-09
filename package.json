@@ -22,7 +22,10 @@
     "test": "bun generate && bun generate -b partial",
     "prepare": "bun run build",
     "size": "size-limit",
-    "generate": "bun --bun ./dist/esm/index.js generate"
+    "generate": "bun --bun ./dist/esm/index.js generate",
+    "lerna:changed": "lerna changed",
+    "lerna:version": "lerna version --conventional-commits --exact --yes",
+    "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-package --no-verify-access --yes --create-release github"
   },
   "name": "@bunstack/theme",
   "description": "A practical theme generator built from the ground up",
