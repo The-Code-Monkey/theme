@@ -9,7 +9,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=18"
+    "node": "21.4.0"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json && bun copy",
