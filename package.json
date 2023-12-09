@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "bin": {
     "orchard": "./dist/esm/index.js"
@@ -8,9 +8,6 @@
     "dist",
     "src"
   ],
-  "engines": {
-    "node": ">=18"
-  },
   "scripts": {
     "build": "tsc -p tsconfig.json && bun copy",
     "copy": "bun copy:config && bun copy:templates && bun copy:theme && bun copy:orchard && bun copy:ts",
@@ -23,7 +20,7 @@
     "prepare": "bun run build",
     "size": "size-limit",
     "generate": "bun --bun ./dist/esm/index.js generate",
-    "release": "yarn version --patch --no-git-tag-version && yarn publish --non-interactive"
+    "release": "yarn version --patch"
   },
   "name": "@bunstack/theme",
   "description": "A practical theme generator built from the ground up",
