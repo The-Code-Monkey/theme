@@ -64,9 +64,5 @@ jobs:
           generateReleaseNotes: "true"
           token: ${{ secrets.GITHUB_TOKEN }}
 
-
       - name: Commit new version
-        run: |
-          git add .
-          git commit -m "Release ${{ steps.package-version.outputs.current-version }}"
-          git push
+        run: git add . && git commit -m "Release ${{ steps.package-version.outputs.current-version }}" && git push
