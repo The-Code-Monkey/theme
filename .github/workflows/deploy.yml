@@ -51,7 +51,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: echo ${{ steps.release.outputs }}
+      - run: echo "${{ steps.release.outputs }}"
 
       - name: Create Release
         uses: ncipollo/release-action@v1
