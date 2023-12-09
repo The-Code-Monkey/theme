@@ -67,7 +67,6 @@ jobs:
 
       - name: Commit new version
         run: |
-          rm -rf .npmrc
           git add .
           git commit -m "Release ${{ steps.package-version.outputs.current-version }}"
           git push
