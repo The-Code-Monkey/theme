@@ -64,7 +64,4 @@ jobs:
           generateReleaseNotes: "true"
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit new version
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Release ${{ steps.package-version.outputs.current-version }}"
+      - run: git push
