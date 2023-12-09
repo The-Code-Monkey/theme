@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.2",
   "license": "MIT",
   "bin": {
     "orchard": "./dist/esm/index.js"
@@ -23,7 +23,7 @@
     "prepare": "bun run build",
     "size": "size-limit",
     "generate": "bun --bun ./dist/esm/index.js generate",
-    "release": "yarn version --patch --no-git-tag-version && npm publish --access public"
+    "release": "yarn version --patch --no-git-tag-version && yarn publish --non-interactive"
   },
   "name": "@bunstack/theme",
   "description": "A practical theme generator built from the ground up",
