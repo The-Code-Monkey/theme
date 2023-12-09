@@ -67,6 +67,7 @@ jobs:
 
       - name: Commit new version
         run: |
+          rm -rf .npmrc
           git add .
           git commit -m "Release ${{ github.ref }}"
           git push
