@@ -51,7 +51,7 @@
     "@types/tinycolor2": "1.4.6",
     "@typescript-eslint/eslint-plugin": "7.10.0",
     "@typescript-eslint/parser": "7.10.0",
-    "bun-types": "1.1.9",
+    "bun-types": "1.1.10",
     "eslint": "9.3.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
