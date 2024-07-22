@@ -61,7 +61,7 @@
     "size-limit": "11.1.4",
     "ts-jest": "29.2.3",
     "tslib": "2.6.3",
-    "typescript": "5.5.3"
+    "typescript": "5.5.4"
   },
   "dependencies": {
     "fs-extra": "11.2.0",
