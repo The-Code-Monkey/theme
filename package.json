@@ -44,7 +44,7 @@
   ],
   "devDependencies": {
     "@size-limit/file": "11.1.6",
-    "@tsconfig/recommended": "1.0.7",
+    "@tsconfig/recommended": "1.0.8",
     "@types/fs-extra": "11.0.4",
     "@types/lodash": "4.17.12",
     "@types/lodash-es": "4.17.12",
