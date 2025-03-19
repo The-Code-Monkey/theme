@@ -64,7 +64,7 @@
     "typescript": "5.7.3"
   },
   "dependencies": {
-    "fs-extra": "11.2.0",
+    "fs-extra": "11.3.0",
     "lodash": "4.17.21",
     "lodash-es": "4.17.21",
     "sade": "1.8.1",
